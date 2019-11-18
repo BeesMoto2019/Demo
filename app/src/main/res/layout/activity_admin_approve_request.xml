@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".AdminApproveRequest">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/approvetool"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:titleTextColor="@color/colorWhite"
+        android:background="@color/toolcolor">
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ListView
+        android:id="@+id/approvelist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/approvetool"
+        android:layout_marginTop="5dp">
+    </ListView>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/icons"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        app:civ_border_color="@color/colorWhite"
+        app:civ_border_width="2dp"
+        app:civ_circle_background_color="@color/colorWhite"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:src="@mipmap/dnldicon">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+
+</RelativeLayout>

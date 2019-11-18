@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="5dp"
+        app:contentPadding="3dp"
+        app:cardElevation="3dp"
+        app:cardPreventCornerOverlap="true"
+        android:layout_marginBottom="5dp"
+        app:cardUseCompatPadding="true"
+        app:cardBackgroundColor="#EDEDED">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/userid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/resemail"
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textSize="14dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/grgnme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textSize="14dp"
+                android:layout_below="@id/resemail"/>
+
+            <TextView
+                android:id="@+id/reqemail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textSize="14dp"
+                android:layout_below="@id/grgnme"/>
+
+            <TextView
+                android:id="@+id/reqbike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textSize="14dp"
+                android:layout_below="@id/reqemail"/>
+
+            <ImageView
+                android:id="@+id/moreinfo"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/info"
+                android:layout_below="@id/grgnme"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="300dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toRightOf="@id/reqemail" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

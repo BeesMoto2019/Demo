@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".AdminAddServices"
+    android:onClick="hideSoftKeyboard">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarsrvc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolcolor"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/toolbarsrvc">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/nameofbike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bike Models:"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="14dp"/>
+
+            <CheckBox
+                android:id="@+id/selecalltbike"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:buttonTint="@color/colorblue"
+                android:layout_toRightOf="@id/nameofbike"
+                android:layout_marginLeft="295dp" />
+
+            <ListView
+                android:id="@+id/bikes"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_below="@id/nameofbike"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@color/colorWhite">
+
+            </ListView>
+
+            <EditText
+                android:id="@+id/srvcname"
+                android:layout_below="@+id/bikes"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="14dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorBlack"
+                android:background="@drawable/edittext"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:textCursorDrawable="@drawable/cursorcolor"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:layout_centerHorizontal="true"
+                android:inputType="textPersonName"
+                android:hint="Service Name" />
+
+            <EditText
+                android:id="@+id/srvcinfo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="14dp"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorBlack"
+                android:background="@drawable/edittext"
+                android:layout_marginStart="20dp"
+                android:layout_below="@id/srvcname"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:textCursorDrawable="@drawable/cursorcolor"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:layout_centerHorizontal="true"
+                android:inputType="textPersonName"
+                android:hint="Service Details" />
+
+            <Button
+                android:id="@+id/btadd"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Add"
+                android:textSize="14dp"
+                android:textAllCaps="false"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_below="@id/srvcinfo"
+                android:textColor="@color/colorWhite"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/buttonly" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

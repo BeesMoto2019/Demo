@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/usrpastcard"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="5dp"
+        app:contentPadding="3dp"
+        app:cardElevation="3dp"
+        app:cardPreventCornerOverlap="true"
+        android:layout_marginBottom="5dp"
+        app:cardUseCompatPadding="true"
+        app:cardBackgroundColor="#EDEDED">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/umemail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="14dp"
+                        android:text="TextView" />
+
+                    <TextView
+                        android:id="@+id/contgarage"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/colorBlack"
+                        android:layout_height="wrap_content"
+                        android:text="TextView"
+                        android:textSize="14dp"
+                        android:layout_below="@id/umemail"/>
+
+                    <TextView
+                        android:id="@+id/bmodel"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="14dp"
+                        android:layout_height="wrap_content"
+                        android:text="TextView"
+                        android:layout_below="@id/contgarage"/>
+
+                    <TextView
+                        android:id="@+id/bservice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="14dp"
+                        android:text="TextView"
+                        android:layout_below="@id/bmodel"/>
+
+                    <TextView
+                        android:id="@+id/requesttype"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="14dp"
+                        android:text="TextView"
+                        android:layout_below="@id/bservice"/>
+
+                    <TextView
+                        android:id="@+id/adate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="14dp"
+                        android:text="TextView"
+                        android:layout_below="@id/requesttype"/>
+
+                    <TextView
+                        android:id="@+id/wtime"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="14dp"
+                        android:layout_height="wrap_content"
+                        android:text="TextView"
+                        android:layout_below="@id/adate"/>
+
+                    <Button
+                        android:id="@+id/feedback"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Feedback"
+                        android:padding="5dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toRightOf="@id/adate"
+                        android:layout_below="@id/bmodel"
+                        android:layout_marginStart="230dp"
+                        android:textAllCaps="false"
+                        android:layout_marginEnd="10dp"
+                        android:textColor="@color/colorWhite"
+                        android:background="@drawable/buttonly2"/>
+
+                    <Button
+                        android:id="@+id/viewfeedback"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="View Feedback"
+                        android:textAllCaps="false"
+                        android:visibility="gone"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toRightOf="@id/adate"
+                        android:layout_below="@id/bmodel"
+                        android:layout_marginStart="230dp"
+                        android:layout_marginEnd="10dp"
+                        android:textColor="@color/colorWhite"
+                        android:background="@drawable/buttonly2"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

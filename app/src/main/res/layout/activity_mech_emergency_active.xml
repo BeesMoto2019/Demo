@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MechEmergencyActive">
+
+    <TextView
+        android:id="@+id/textmechemegactive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:textColor="@color/colorBlack" />
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/emergactive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        android:background="@color/toolcolor"
+        android:minHeight="?attr/actionBarSize"
+        app:titleTextColor="@color/colorWhite"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+
+    <ListView
+        android:id="@+id/emergactivelist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/emergactive"
+        android:layout_marginTop="5dp"/>
+
+
+</RelativeLayout>

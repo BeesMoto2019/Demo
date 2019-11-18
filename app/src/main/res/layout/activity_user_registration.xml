@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserRegistration"
+    android:background="@color/colorWhite">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="hideSoftKeyboard">
+
+            <TextView
+                android:id="@+id/regname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SIGN UP"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:fontFamily="@font/montserrat"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"/>
+
+
+                <EditText
+                    android:id="@+id/Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/montserrat"
+                    android:layout_below="@id/regname"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorBlack"
+                    android:background="@drawable/edittext"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:textCursorDrawable="@drawable/cursorcolor"
+                    android:layout_marginTop="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="20dp"
+                    android:textSize="14dp"
+                    android:inputType="textPersonName"
+                    android:hint="Full Name" />
+
+                <EditText
+                    android:id="@+id/Email"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:textCursorDrawable="@drawable/cursorcolor"
+                    android:layout_below="@id/Name"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/montserrat"
+                    android:layout_marginStart="20dp"
+                    android:textSize="14dp"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorBlack"
+                    android:background="@drawable/edittext"
+                    android:inputType="textEmailAddress"
+                    android:hint="Emailid" />
+
+                <EditText
+                    android:id="@+id/phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textCursorDrawable="@drawable/cursorcolor"
+                    android:textColor="@color/colorBlack"
+                    android:fontFamily="@font/montserrat"
+                    android:textColorHint="@color/colorBlack"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_below="@id/Email"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/edittext"
+                    android:textSize="14dp"
+                    android:inputType="number"
+                    android:hint="Contact No" />
+
+                <EditText
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/colorBlack"
+                    android:layout_below="@id/phone"
+                    android:fontFamily="@font/montserrat"
+                    android:textCursorDrawable="@drawable/cursorcolor"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:textColorHint="@color/colorBlack"
+                    android:layout_marginTop="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="20dp"
+                    android:textSize="14dp"
+                    android:background="@drawable/edittext"
+                    android:inputType="textMultiLine"
+                    android:hint="Address" />
+
+                <EditText
+                    android:id="@+id/states"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorBlack"
+                    android:background="@drawable/edittext"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:fontFamily="@font/montserrat"
+                    android:layout_below="@id/address"
+                    android:textSize="14dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="200dp"
+                    android:layout_marginTop="20dp"
+                    android:textCursorDrawable="@drawable/cursorcolor"
+                    android:inputType="textPersonName"
+                    android:hint="State" />
+
+                <EditText
+                    android:id="@+id/City"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:fontFamily="@font/montserrat"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorBlack"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_below="@id/address"
+                    android:layout_toRightOf="@id/states"
+                    android:layout_marginStart="-195dp"
+                    android:layout_marginEnd="20dp"
+                    android:textCursorDrawable="@drawable/cursorcolor"
+                    android:background="@drawable/edittext"
+                    android:textSize="14dp"
+                    android:layout_marginTop="20dp"
+                    android:inputType="textPersonName"
+                    android:hint="City" />
+
+                <EditText
+                    android:id="@+id/landmark"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textColor="@color/colorBlack"
+                    android:fontFamily="@font/montserrat"
+                    android:textColorHint="@color/colorBlack"
+                    android:layout_marginEnd="200dp"
+                    android:layout_marginStart="20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:textCursorDrawable="@drawable/cursorcolor"
+                    android:layout_below="@id/states"
+                    android:background="@drawable/edittext"
+                    android:textSize="14dp"
+                    android:inputType="textPersonName"
+                    android:hint="Landmark" />
+
+
+                <EditText
+                    android:id="@+id/Pincode"
+                    android:layout_width="match_parent"
+                    android:layout_toRightOf="@id/landmark"
+                    android:layout_height="50dp"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorBlack"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:fontFamily="@font/montserrat"
+                    android:layout_below="@id/states"
+                    android:layout_marginTop="20dp"
+                    android:textCursorDrawable="@drawable/cursorcolor"
+                    android:layout_marginStart="-195dp"
+                    android:background="@drawable/edittext"
+                    android:layout_marginEnd="20dp"
+                    android:textSize="14dp"
+                    android:inputType="number"
+                    android:hint="Pincode" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/pass"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/landmark"
+                android:layout_marginTop="20dp"
+                app:passwordToggleEnabled="true"
+                app:hintAnimationEnabled="false"
+                app:hintEnabled="false">
+
+                <EditText
+                    android:id="@+id/pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:fontFamily="@font/montserrat"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:textCursorDrawable="@drawable/cursorcolor"
+                    android:textSize="14dp"
+                    android:background="@drawable/edittext"
+                    android:inputType="textPassword"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorBlack"
+                    android:hint="Password" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/cpassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/pass"
+                android:layout_marginTop="20dp"
+                app:passwordToggleEnabled="true"
+                app:hintAnimationEnabled="false"
+                app:hintEnabled="false">
+
+                <EditText
+                    android:id="@+id/cnfpwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:paddingRight="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/edittext"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorBlack"
+                    android:paddingLeft="20dp"
+                    android:textCursorDrawable="@drawable/cursorcolor"
+                    android:fontFamily="@font/montserrat"
+                    android:textSize="14dp"
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/subject"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="212dp"
+                android:background="#F5F5F5"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="BeesMOTO : Successfull Registration"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/Message"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="199dp"
+                android:background="#F5F5F5"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:visibility="invisible"/>
+
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/cpassword"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="Register"
+                android:layout_marginBottom="10dp"
+                android:textSize="14dp"
+                android:textColor="@color/colorWhite"
+                android:fontFamily="@font/montserrat"
+                android:textStyle="bold"
+                android:background="@drawable/buttonly"/>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

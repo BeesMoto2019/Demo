@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="2dp"
+        app:cardCornerRadius="5dp"
+        app:contentPadding="3dp"
+        app:cardElevation="3dp"
+        app:cardPreventCornerOverlap="true"
+        android:layout_marginBottom="2dp"
+        app:cardUseCompatPadding="true"
+        app:cardBackgroundColor="#EDEDED">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/bikemodel"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textSize="14dp" />
+
+            <CheckBox
+                android:id="@+id/selectbike"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:buttonTint="@color/colorblue"
+                android:layout_toRightOf="@id/bikemodel"
+                android:layout_marginLeft="280dp" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

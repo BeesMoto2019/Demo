@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardvalue"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="5dp"
+        app:contentPadding="3dp"
+        android:visibility="gone"
+        app:cardElevation="3dp"
+        app:cardPreventCornerOverlap="true"
+        android:layout_marginBottom="5dp"
+        app:cardUseCompatPadding="true"
+        app:cardBackgroundColor="#EDEDED">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="@color/colorBlack"
+                android:textSize="14dp"/>
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:textColor="@color/colorBlack"
+                android:textSize="14dp"
+                android:text="Email" />
+
+            <TextView
+                android:id="@+id/contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/email"
+                android:textColor="@color/colorBlack"
+                android:textSize="14dp"
+                android:text="Email" />
+
+            <TextView
+                android:id="@+id/latitute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contact"
+                android:textColor="@color/colorBlack"
+                android:textSize="14dp"
+                android:text="Email" />
+
+            <TextView
+                android:id="@+id/longitute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/latitute"
+                android:textColor="@color/colorBlack"
+                android:textSize="14dp"
+                android:text="Email" />
+
+            <TextView
+                android:id="@+id/service"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/longitute"
+                android:textColor="@color/colorBlack"
+                android:textSize="14dp"
+                android:text="Email" />
+
+                <Button
+                    android:id="@+id/btnapprove"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/latitute"
+                    android:padding="5dp"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@color/colorWhite"
+                    android:layout_toRightOf="@id/contact"
+                    android:layout_marginStart="230dp"
+                    android:text="View Location"
+                    android:background="@drawable/buttonly2"
+                    android:textAllCaps="false"
+                    android:textSize="14dp"/>
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

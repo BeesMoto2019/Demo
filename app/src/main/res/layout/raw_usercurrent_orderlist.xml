@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="5dp"
+        app:contentPadding="3dp"
+        app:cardElevation="3dp"
+        app:cardPreventCornerOverlap="true"
+        android:layout_marginBottom="5dp"
+        app:cardUseCompatPadding="true"
+        app:cardBackgroundColor="#EDEDED">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/reqid"
+                    android:text="id"
+                    android:visibility="gone"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14dp" />
+
+
+                <TextView
+                    android:id="@+id/serdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/reqid"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14dp"
+                    android:text="Service date"
+                    />
+
+
+                <TextView
+                    android:id="@+id/stype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14dp"
+                    android:layout_below="@+id/serdate"
+                    android:text="type" />
+
+                <TextView
+                    android:id="@+id/bike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:layout_below="@id/stype"
+                    android:textSize="14dp"
+                    android:text="bike"
+                    />
+
+                <TextView
+                    android:id="@+id/status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/stype"
+                    android:gravity="center"
+                    android:layout_toRightOf="@id/stype"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="210dp"
+                    android:layout_marginEnd="10dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:text="Status" />
+
+                <ImageView
+                    android:id="@+id/moreinfo"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/info"
+                    android:layout_below="@id/stype"
+                    android:visibility="gone"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="300dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toRightOf="@id/stype" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

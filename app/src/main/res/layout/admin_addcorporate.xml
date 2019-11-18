@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin_addCorporate"
+    android:background="@color/colorWhite"
+    android:onClick="hideKeyboard">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolcolor"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:titleTextColor="@color/colorWhite"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+                <EditText
+                    android:id="@+id/crptname"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textSize="14dp"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorBlack"
+                    android:background="@drawable/edittext"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:textCursorDrawable="@drawable/cursorcolor"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:inputType="textPersonName"
+                    android:hint="Company Name" />
+
+
+                <EditText
+                    android:id="@+id/crptaddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/crptname"
+                    android:layout_marginTop="20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:background="@drawable/edittext"
+                    android:textCursorDrawable="@drawable/cursorcolor"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:textColorHint="@color/colorBlack"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14dp"
+                    android:layout_centerHorizontal="true"
+                    android:inputType="textPersonName"
+                    android:hint="Company Address" />
+
+
+                <EditText
+                    android:id="@+id/crptcity"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/crptaddress"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="20dp"
+                    android:background="@drawable/edittext"
+                    android:textCursorDrawable="@drawable/cursorcolor"
+                    android:textSize="14dp"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorBlack"
+                    android:layout_centerHorizontal="true"
+                    android:inputType="textPersonName"
+                    android:hint="Company City" />
+
+
+                <EditText
+                    android:id="@+id/crptlandmark"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/crptcity"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:background="@drawable/edittext"
+                    android:textColorHint="@color/colorBlack"
+                    android:textCursorDrawable="@drawable/cursorcolor"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14dp"
+                    android:layout_centerHorizontal="true"
+                    android:inputType="textPersonName"
+                    android:hint="Landmark" />
+
+
+                <EditText
+                    android:id="@+id/crptpin"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/crptlandmark"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="20dp"
+                    android:background="@drawable/edittext"
+                    android:textCursorDrawable="@drawable/cursorcolor"
+                    android:textSize="14dp"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorBlack"
+                    android:layout_centerHorizontal="true"
+                    android:inputType="textPersonName"
+                    android:hint="Pincode" />
+
+            <Button
+                android:id="@+id/btadd"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Add"
+                android:textSize="14dp"
+                android:textAllCaps="false"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_below="@id/crptpin"
+                android:textColor="@color/colorWhite"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/buttonly"
+                android:onClick="hideKeyboard"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

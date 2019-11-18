@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">BeesMOTO</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <string-array name="services">
+        <item>Combo 1</item>
+        <item>Combo 2</item>
+    </string-array>
+
+    <string-array name="timing">
+        <item>Please Select Your Appointment Time</item>
+        <item>9:00 AM to 11:00 AM</item>
+        <item>11:00 AM to 1:00 PM</item>
+        <item>1:00 PM to 3:00 PM</item>
+        <item>3:00 PM to 5:00 PM</item>
+        <item>5:00 PM to 7:00 PM</item>
+        <item>7:00 PM to 9:00 PM</item>
+    </string-array>
+    <string name="title_activity_user__find_mech">Map</string>
+    <string name="title_activity_mech_view_location">Map</string>
+    <string name="title_activity_user_track_mech">Map</string>
+    <string name="title_activity_mech_track_user">Map</string>
+
+</resources>

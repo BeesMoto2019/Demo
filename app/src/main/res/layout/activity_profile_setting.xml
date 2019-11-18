@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileSetting"
+    android:background="@color/colorWhite"
+    android:onClick="hideSoftKeyboard">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/profiletoolbar"
+        android:layout_width="match_parent"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        android:layout_height="50dp"
+        android:background="@color/toolcolor"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:titleTextColor="@color/colorWhite">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/profiletoolbar"
+        android:layout_marginTop="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/profilepic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/prpic"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:civ_border_width="1dp"
+                    app:civ_border_color="@color/colorWhite"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginTop="20dp" />
+
+                <ImageView
+                    android:id="@+id/prcam"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="bottom|right"
+                    android:background="@mipmap/camera"/>
+
+            </FrameLayout>
+
+
+            <EditText
+                android:id="@+id/garagename"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edittext"
+                android:textColorHint="@color/colorBlack"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:hint="Garage Name"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_below="@+id/profilepic"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:hint="Email"
+                android:editable="false"
+                android:textColorHint="@color/colorBlack"
+                android:layout_below="@id/garagename"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/colorBlack"
+                android:background="@drawable/edittext"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/contact"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/email"
+                android:hint="Contact No"
+                android:textColorHint="@color/colorBlack"
+                android:background="@drawable/edittext"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/contact"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/colorBlack"
+                android:hint="Address"
+                android:paddingRight="20dp"
+                android:textColorHint="@color/colorBlack"
+                android:background="@drawable/edittext"
+                android:paddingLeft="20dp"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/state"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edittext"
+                android:hint="State"
+                android:paddingRight="20dp"
+                android:textColorHint="@color/colorBlack"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="200dp"
+                android:layout_below="@+id/address"
+                android:textSize="14dp"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="20dp"
+                android:textColor="@color/colorBlack" />
+
+
+            <EditText
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edittext"
+                android:hint="City"
+                android:paddingRight="20dp"
+                android:textColorHint="@color/colorBlack"
+                android:layout_below="@+id/address"
+                android:textSize="14dp"
+                android:paddingLeft="20dp"
+                android:layout_toRightOf="@id/state"
+                android:layout_marginStart="-195dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/colorBlack" />
+
+            <EditText
+                android:id="@+id/landmark"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="200dp"
+                android:textSize="14dp"
+                android:paddingRight="20dp"
+                android:hint="Landmark"
+                android:paddingLeft="20dp"
+                android:textColorHint="@color/colorBlack"
+                android:background="@drawable/edittext"
+                android:layout_below="@+id/state"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/colorBlack" />
+
+            <EditText
+                android:id="@+id/pincode"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/state"
+                android:layout_toRightOf="@id/landmark"
+                android:layout_marginStart="-195dp"
+                android:textSize="14dp"
+                android:paddingRight="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext"
+                android:hint="Pincode"
+                android:textColorHint="@color/colorBlack"
+                android:textColor="@color/colorBlack"/>
+
+
+
+            <TextView
+                android:id="@+id/regid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/update"
+                android:layout_width="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/pincode"
+                android:layout_marginTop="30dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:text="Update"
+                android:textAllCaps="false"
+                android:background="@drawable/buttonly"/>
+
+            <TextView
+                android:id="@+id/Changepassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/ripple_effect"
+                android:layout_below="@id/update"
+                android:text="Change Your Password Here"
+                android:textSize="14dp"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"/>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

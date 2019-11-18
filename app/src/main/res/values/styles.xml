@@ -1,0 +1,68 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!--<item name="colorPrimary">@color/transparent_color</item>-->
+        <item name="colorPrimaryDark">@color/colorblue</item>
+        <item name="colorAccent">@color/transparent_color</item>
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:windowAnimationStyle">@style/ActivityAnimation</item>
+        <item name="android:textCursorDrawable">@drawable/cursorcolor</item>
+    </style>
+
+    <style name="TextLabel" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/colorWhite</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/montserrat</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">@color/colorWhite</item>
+        <item name="colorControlNormal">@color/colorWhite</item>
+        <item name="colorControlActivated">@color/colorWhite</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="NavigationDrawerStyle">
+        <item name="android:textSize">14dp</item><!-- text size in menu-->
+        <!--<item name="android:listPreferredItemHeightSmall">40dp</item>&lt;!&ndash; item size in menu&ndash;&gt;-->
+        <!--<item name="listPreferredItemHeightSmall">40dp</item>&lt;!&ndash; item size in menu&ndash;&gt;-->
+    </style>
+
+    <!-- Theme.AppCompat.Light.Dialog -->
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/main_orange_color</item>
+    </style>
+
+    <!--for textview theme-->
+    <style name="MyTheme" parent="android:Theme">
+        <item name="android:textViewStyle">@style/MyTextViewStyle</item>
+    </style>
+
+    <style name="MyTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="searchview" parent="android:Theme">
+        <item name="android:editTextColor">@color/colorBlack</item>
+        <item name="android:textColorHint">@color/colorBlack</item>
+        <item name="android:tint">@color/colorBlack</item>
+    </style>
+
+    <style name="yourstyle" parent="@style/Base.TextAppearance.AppCompat.Title">
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="ActivityAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:activityCloseEnterAnimation">@android:anim/fade_out</item>
+    </style>
+</resources>

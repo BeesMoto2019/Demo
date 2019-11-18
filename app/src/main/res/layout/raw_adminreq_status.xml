@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="2dp"
+        app:cardCornerRadius="5dp"
+        app:contentPadding="3dp"
+        app:cardElevation="3dp"
+        app:cardPreventCornerOverlap="true"
+        android:layout_marginBottom="2dp"
+        app:cardUseCompatPadding="true"
+        app:cardBackgroundColor="#EDEDED">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/reqid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:visibility="gone"
+                android:textColor="@color/colorWhite"/>
+
+            <TextView
+                android:id="@+id/mechemailid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="14dp"
+                android:textColor="@color/colorBlack"/>
+
+            <TextView
+                android:id="@+id/mechgrg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:layout_below="@id/mechemailid"
+                android:textSize="14dp"
+                android:textColor="@color/colorBlack"/>
+
+            <TextView
+                android:id="@+id/mechcontact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:layout_below="@id/mechgrg"
+                android:textSize="14dp"
+                android:textColor="@color/colorBlack"/>
+
+            <TextView
+                android:id="@+id/req_st"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="14dp"
+                android:layout_below="@id/mechgrg"
+                android:layout_toRightOf="@id/mechemailid"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="260dp"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/colorWhite"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".MechRegLocation">
+
+    <RelativeLayout
+        android:id="@+id/infm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="16dp"
+            android:layout_centerHorizontal="true"
+            android:text="Please Register your location Here!!!"/>
+
+
+    </RelativeLayout>
+
+    <fragment
+        android:id="@+id/mapfragment"
+        android:layout_below="@id/infm"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="530dp"
+        android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+    <RelativeLayout
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_below="@id/mapfragment"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/selectlocation"
+            android:layout_width="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:textSize="14dp"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:background="@drawable/buttonly"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

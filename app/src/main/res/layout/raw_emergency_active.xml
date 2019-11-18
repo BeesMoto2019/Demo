@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/usrpastcard"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="5dp"
+        app:contentPadding="3dp"
+        app:cardElevation="3dp"
+        app:cardPreventCornerOverlap="true"
+        android:layout_marginBottom="5dp"
+        app:cardUseCompatPadding="true"
+        app:cardBackgroundColor="#EDEDED">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/uname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textSize="14dp"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/uemail"
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="14dp"
+                android:layout_below="@id/uname"/>
+
+            <TextView
+                android:id="@+id/ucontact"
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textSize="14dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:layout_below="@id/uemail"/>
+
+            <TextView
+                android:id="@+id/uservc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textSize="14dp"
+                android:text="TextView"
+                android:layout_below="@id/ucontact"/>
+
+            <Button
+                android:id="@+id/track"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Track"
+                android:padding="5dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/uservc"
+                android:layout_marginStart="100dp"
+                android:textAllCaps="false"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/buttonly2"/>
+
+            <Button
+                android:id="@+id/aorder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Active Order"
+                android:textAllCaps="false"
+                android:layout_alignParentLeft="true"
+                android:layout_toRightOf="@id/track"
+                android:layout_below="@id/uservc"
+                android:layout_marginStart="200dp"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/buttonly2"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

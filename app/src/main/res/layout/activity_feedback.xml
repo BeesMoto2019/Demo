@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="hideSoftKeyboard">
+
+
+    <TextView
+        android:id="@+id/titlefeedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:text="Feedback"/>
+
+    <TextView
+        android:id="@+id/ratemech"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:text="Rate Mechanic"/>
+
+    <RatingBar
+        android:id="@+id/mechrating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rating="0.0"
+        android:secondaryProgressTint="@color/colorWhite"
+        android:progressTint="@color/colorblue"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/rateapp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:layout_gravity="center"
+        android:text="Rate Application"/>
+
+    <RatingBar
+        android:id="@+id/apprating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rating="0.0"
+        android:secondaryProgressTint="@color/colorWhite"
+        android:progressTint="@color/colorblue"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:id="@+id/msg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:maxLength="300"
+        android:background="@drawable/edittext"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:textCursorDrawable="@drawable/cursorcolor"
+        android:hint="What would you like to tell us?"
+        android:textColorHint="@color/colorBlack"
+        android:textColor="@color/colorBlack"
+        android:gravity="center"
+        android:layout_marginTop="10dp"/>
+
+
+</LinearLayout>

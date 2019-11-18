@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:gravity="center"
+        android:textSize="16dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reset Password" />
+
+
+    <EditText
+        android:id="@+id/usrcode"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/textView"
+        android:background="@drawable/edittext"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textCursorDrawable="@drawable/cursorcolor"
+        android:textColorHint="@color/colorBlack"
+        android:hint="Enter OTP"
+        android:textSize="14dp"
+        android:textColor="@color/colorBlack"
+        android:inputType="number" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/npass"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/usrcode"
+        android:layout_marginTop="20dp"
+        app:passwordToggleEnabled="true"
+        app:hintAnimationEnabled="false"
+        app:hintEnabled="false">
+
+
+        <EditText
+            android:id="@+id/changepwd"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="textPassword"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textCursorDrawable="@drawable/cursorcolor"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:hint="New Password"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlack"
+            android:background="@drawable/edittext"
+            android:textSize="14dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/cpass"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/npass"
+        android:layout_marginTop="20dp"
+        app:passwordToggleEnabled="true"
+        app:hintAnimationEnabled="false"
+        app:hintEnabled="false">
+
+
+        <EditText
+            android:id="@+id/cpassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="textPassword"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textCursorDrawable="@drawable/cursorcolor"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:hint="Confirm Password"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlack"
+            android:background="@drawable/edittext"
+            android:textSize="14dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/Change"
+        android:layout_width="match_parent"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/cpass"
+        android:textSize="14dp"
+        android:text="Reset"
+        android:textAllCaps="false"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:background="@drawable/buttonly"/>
+
+</RelativeLayout>

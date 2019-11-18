@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CorporateRequest"
+    android:onClick="hideKeyboard"
+    android:background="@color/colorWhite">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="@color/toolcolor"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarcor"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/toolcolor"
+                app:titleTextColor="@color/colorWhite"
+                app:contentInsetLeft="0dp"
+                app:contentInsetStart="0dp"
+                app:contentInsetStartWithNavigation="0dp"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+
+             <androidx.appcompat.widget.SearchView
+                 android:id="@+id/searchbike"
+                 android:layout_width="match_parent"
+                 android:layout_height="50dp"
+                 android:paddingLeft="20dp"
+                 android:paddingRight="20dp"
+                 android:layout_marginStart="20dp"
+                 android:layout_marginEnd="20dp"
+                 android:background="@drawable/edittext"
+                 app:defaultQueryHint="Search Your Bike Model Here.."
+                 app:iconifiedByDefault="false"
+                 android:clickable="true"
+                 android:theme="@style/searchview">
+
+                 <requestFocus/>
+
+         </androidx.appcompat.widget.SearchView>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ListView
+        android:id="@+id/searchbar"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/appbar">
+
+    </ListView>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:visibility="gone"
+        android:background="@drawable/edittext"
+        android:layout_height="50dp"
+        android:layout_below="@id/searchbar"
+        android:layout_marginTop="10dp">
+
+    </Spinner>
+
+    <LinearLayout
+        android:id="@+id/textvalue"
+        android:layout_below="@id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            app:cardBackgroundColor="#EDEDED"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="10dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/servcname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:id="@+id/servcinfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_below="@+id/servcname"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/colorBlack" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/nxt"
+        android:layout_width="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Request"
+        android:textAllCaps="false"
+        android:layout_below="@id/textvalue"
+        android:layout_height="50dp"
+        android:background="@drawable/buttonly"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:textSize="14dp"/>
+
+</RelativeLayout>

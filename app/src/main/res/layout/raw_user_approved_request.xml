@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/titledetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:text="Order Details"/>
+
+    <ImageView
+        android:id="@+id/closewindow"
+        android:layout_marginTop="5dp"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@mipmap/close"
+        android:layout_toRightOf="@id/titledetails"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="335dp"
+        android:layout_marginEnd="10dp"/>
+
+    <TextView
+        android:id="@+id/mechtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mech Information"
+        android:paddingLeft="5dp"
+        android:layout_below="@id/titledetails"
+        android:layout_marginTop="10dp"
+        android:textSize="14dp"
+        android:textColor="@color/colorBlack"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mechdetails"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/mechtitle"
+        android:layout_marginTop="5dp"
+        android:layout_height="100dp"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="5dp"
+        app:contentPadding="3dp"
+        app:cardElevation="3dp"
+        app:cardPreventCornerOverlap="true"
+        android:layout_marginBottom="5dp"
+        app:cardUseCompatPadding="true"
+        app:cardBackgroundColor="#EDEDED">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/rid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/mechgarage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="14dp"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:id="@+id/mechemail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/mechgarage"
+                    android:textSize="14dp"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:id="@+id/mechcontact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/mechemail"
+                    android:textSize="14dp"
+                    android:textColor="@color/colorBlack"/>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/ordertitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Information"
+            android:paddingLeft="5dp"
+            android:layout_below="@id/mechdetails"
+            android:layout_marginTop="10dp"
+            android:textSize="14dp"
+            android:textColor="@color/colorBlack"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/orderdetails"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/ordertitle"
+                android:layout_marginTop="5dp"
+                android:layout_height="130dp"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="5dp"
+                app:contentPadding="3dp"
+                app:cardElevation="3dp"
+                app:cardPreventCornerOverlap="true"
+                android:layout_marginBottom="5dp"
+                app:cardUseCompatPadding="true"
+                app:cardBackgroundColor="#EDEDED">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="14dp"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:id="@+id/model"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/code"
+                    android:textSize="14dp"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:id="@+id/service"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/model"
+                    android:textSize="14dp"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/service"
+                    android:textSize="14dp"
+                    android:textColor="@color/colorBlack"/>
+
+
+
+            </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+

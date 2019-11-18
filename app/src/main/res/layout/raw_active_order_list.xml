@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="5dp"
+        app:contentPadding="3dp"
+        app:cardElevation="3dp"
+        app:cardPreventCornerOverlap="true"
+        android:layout_marginBottom="5dp"
+        app:cardUseCompatPadding="true"
+        app:cardBackgroundColor="#EDEDED">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+
+
+                <TextView
+                    android:id="@+id/sdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14dp"
+                    android:text="date:" />
+
+                <TextView
+                    android:id="@+id/Service"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14dp"
+                    android:layout_below="@id/sdate"
+                    android:text="service:" />
+
+                <TextView
+                    android:id="@+id/model"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14dp"
+                    android:layout_below="@id/Service"
+                    android:text="bike:" />
+
+                <TextView
+                    android:id="@+id/landmark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14dp"
+                    android:layout_below="@id/model"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/pincode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14dp"
+                    android:layout_below="@id/landmark"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/reqemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14dp"
+                    android:layout_below="@id/pincode"
+                    android:text="phone" />
+
+                <TextView
+                    android:id="@+id/phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/reqemail"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14dp"
+                    android:text="phone" />
+
+                <Button
+                    android:id="@+id/working"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:background="@drawable/buttonly2"
+                    android:layout_alignParentLeft="true"
+                    android:textAllCaps="false"
+                    android:textSize="14dp"
+                    android:layout_below="@id/pincode"
+                    android:layout_toRightOf="@id/reqemail"
+                    android:layout_marginStart="300dp"
+                    android:text="Active"
+                    android:textColor="@color/colorWhite"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <TextView
+        android:id="@+id/textView"
+        android:gravity="center"
+        android:textSize="16dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verify OTP" />
+
+    <EditText
+        android:id="@+id/otp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/edittext"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textCursorDrawable="@drawable/cursorcolor"
+        android:textColorHint="@color/colorBlack"
+        android:hint="Enter OTP"
+        android:textSize="14dp"
+        android:textColor="@color/colorBlack"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/verify"
+        android:layout_width="match_parent"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:textSize="14dp"
+        android:text="Verify"
+        android:textAllCaps="false"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:background="@drawable/buttonly"/>
+
+
+</LinearLayout>

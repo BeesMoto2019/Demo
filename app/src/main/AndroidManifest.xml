@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bikeservice">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/androidicon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/androidicon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Payment"></activity>
+        <activity android:name=".MechRegLocation" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_test_wYqEYmN6f6F9dG" />
+
+        <activity
+            android:name=".MechTrackUser"
+            android:label="@string/title_activity_mech_track_user" />
+        <activity
+            android:name=".MechEmergencyActive"
+            android:parentActivityName=".NavigationDrawer" />
+        <activity
+            android:name=".UserTrackMech"
+            android:label="@string/title_activity_user_track_mech" />
+        <activity
+            android:name=".CurrentEmergency"
+            android:parentActivityName=".UserNavigation" />
+        <activity
+            android:name=".MechViewLocation"
+            android:label="@string/title_activity_mech_view_location" />
+        <activity
+            android:name=".MechEmergencyReq"
+            android:parentActivityName=".NavigationDrawer" />
+        <activity
+            android:name=".User_FindMech"
+            android:label="@string/title_activity_user__find_mech" />
+        <activity
+            android:name=".EmergencyRequest"
+            android:parentActivityName=".UserNavigation" />
+        <activity
+            android:name=".EmergencyWork"
+            android:parentActivityName=".NavigationDrawer" />
+        <activity
+            android:name=".AdminAddServices"
+            android:parentActivityName=".AdminHome" />
+        <activity android:name=".AdminHome" />
+        <activity
+            android:name=".AdminReqStatus"
+            android:parentActivityName=".AdminRequestHistory" />
+        <activity
+            android:name=".ForgotPasswordUser"
+            android:parentActivityName=".UserLogin" />
+        <activity android:name=".SelectType" />
+        <activity
+            android:name=".UserService"
+            android:parentActivityName=".User_Request" />
+        <activity
+            android:name=".CorporateServices"
+            android:parentActivityName=".CorporateRequest" />
+        <activity
+            android:name=".MechLatestReq"
+            android:parentActivityName=".NavigationDrawer" />
+        <activity
+            android:name=".CorporateRequest"
+            android:parentActivityName=".RequesterType"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".UserList"
+            android:parentActivityName=".AdminHome" />
+        <activity
+            android:name=".RequesterType"
+            android:parentActivityName=".UserNavigation" />
+        <activity
+            android:name=".AddBike"
+            android:parentActivityName=".AdminHome" />
+        <activity
+            android:name=".UserProfileSetting"
+            android:parentActivityName=".UserNavigation" />
+        <activity
+            android:name=".User_Request"
+            android:parentActivityName=".RequesterType" />
+        <activity
+            android:name=".UsrPastOrders"
+            android:parentActivityName=".UserNavigation" />
+        <activity
+            android:name=".MechPastOrders"
+            android:parentActivityName=".NavigationDrawer" />
+        <activity
+            android:name=".AdminApproveRequest"
+            android:parentActivityName=".AdminHome" />
+        <activity
+            android:name=".UserCurrentOrders"
+            android:parentActivityName=".UserNavigation" />
+        <activity
+            android:name=".MechActiveOrders"
+            android:parentActivityName=".NavigationDrawer" />
+        <activity
+            android:name=".MechanicList"
+            android:parentActivityName=".AdminHome" />
+        <activity
+            android:name=".AdminRequestHistory"
+            android:parentActivityName=".AdminHome" />
+        <activity
+            android:name=".MechTiming"
+            android:parentActivityName=".NavigationDrawer" />
+        <activity
+            android:name=".IndividualRequestList"
+            android:parentActivityName=".AdminHome" />
+        <activity
+            android:name=".MechReqList"
+            android:parentActivityName=".IndividualRequestList" />
+        <activity android:name=".UserRegistration" />
+        <activity
+            android:name=".ProfileSetting"
+            android:parentActivityName=".NavigationDrawer" />
+        <activity android:name=".NavigationDrawer" />
+        <activity
+            android:name=".Forgot_Password"
+            android:parentActivityName=".Login" />
+        <activity
+            android:name=".Admin_addCorporate"
+            android:parentActivityName=".AdminHome" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".UserLogin" />
+        <activity android:name=".Login" />
+        <activity android:name=".UserNavigation" />
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

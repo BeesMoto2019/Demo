@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardAdmin"
+    android:background="@color/colorWhite">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/titleadmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:contentInsetLeft="20dp"
+        app:contentInsetStart="20dp"
+        app:contentInsetStartWithNavigation="0dp"
+        android:background="@color/toolcolor"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <ScrollView
+        android:layout_below="@id/titleadmin"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="20dp">
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="vertical"
+                            app:cardBackgroundColor="#EDEDED"
+                            app:cardElevation="10dp"
+                            app:cardCornerRadius="10dp">
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+
+                                <ImageView
+                                    android:id="@+id/userreg"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:src="@mipmap/adminuserregister"
+                                    android:layout_centerInParent="true"/>
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="User Register"
+                                    android:textSize="14dp"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginEnd="5dp"
+                                    android:layout_below="@+id/userreg"
+                                    android:gravity="center"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:textColor="@color/colorBlack" />
+
+
+                                <Button
+                                    android:id="@+id/btnuserreg"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@android:color/transparent"/>
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="vertical"
+                            app:cardCornerRadius="10dp"
+                            app:cardBackgroundColor="#EDEDED"
+                            app:cardElevation="10dp">
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+
+                                <ImageView
+                                    android:id="@+id/mechreg"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:src="@mipmap/adminmechregister"
+                                    android:layout_centerInParent="true"/>
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Mechanic Register"
+                                    android:textSize="14dp"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginEnd="5dp"
+                                    android:layout_below="@+id/mechreg"
+                                    android:gravity="center"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:textColor="@color/colorBlack" />
+
+
+                                <Button
+                                    android:id="@+id/btnmechreg"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@android:color/transparent"/>
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="20dp">
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="vertical"
+                            app:cardCornerRadius="10dp"
+                            app:cardBackgroundColor="#EDEDED"
+                            app:cardElevation="10dp">
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+
+                                <ImageView
+                                    android:id="@+id/userreq"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:src="@mipmap/adminuserrequest"
+                                    android:layout_centerInParent="true"/>
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="User Request"
+                                    android:textSize="14dp"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginEnd="5dp"
+                                    android:layout_below="@+id/userreq"
+                                    android:gravity="center"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:textColor="@color/colorBlack" />
+
+
+                                <Button
+                                    android:id="@+id/btnuserreq"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@android:color/transparent"/>
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            app:cardCornerRadius="10dp"
+                            android:orientation="vertical"
+                            app:cardBackgroundColor="#EDEDED"
+                            app:cardElevation="10dp">
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+
+                                <ImageView
+                                    android:id="@+id/requesthistory"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:src="@mipmap/adminrequesthistory"
+                                    android:layout_centerInParent="true"/>
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Pending Request"
+                                    android:textSize="14dp"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginEnd="5dp"
+                                    android:layout_below="@+id/requesthistory"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10dp"
+                                    android:gravity="center"
+                                    android:layout_marginBottom="10dp"
+                                    android:textColor="@color/colorBlack" />
+
+
+                                <Button
+                                    android:id="@+id/btnhistory"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@android:color/transparent"/>
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="190dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="20dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            app:cardCornerRadius="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="vertical"
+                            app:cardBackgroundColor="#EDEDED"
+                            app:cardElevation="10dp">
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+
+                                <ImageView
+                                    android:id="@+id/approvereq"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:src="@mipmap/adminrequesthistory"
+                                    android:layout_centerInParent="true"/>
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Request History"
+                                    android:textSize="14dp"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginEnd="5dp"
+                                    android:gravity="center"
+                                    android:layout_below="@+id/approvereq"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:textColor="@color/colorBlack" />
+
+
+                                <Button
+                                    android:id="@+id/btnmechapprove"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignBottom="@+id/approvereq"
+                                    android:layout_marginBottom="-43dp"
+                                    android:background="@android:color/transparent" />
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

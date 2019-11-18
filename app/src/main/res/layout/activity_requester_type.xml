@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RequesterType"
+    android:background="@color/colorWhite"
+    android:onClick="hideKeyboard">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarsel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@color/colorWhite"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        android:background="@color/toolcolor"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <Button
+        android:id="@+id/indvidual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="200dp"
+        android:layout_below="@id/toolbarsel"
+        android:text="Individual"
+        android:background="@drawable/buttonly"
+        android:textAllCaps="false"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:onClick="hideKeyboard"
+        android:textColor="@color/colorWhite"/>
+
+    <Button
+        android:id="@+id/corp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/indvidual"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Corporate"
+        android:background="@drawable/buttonly"
+        android:textSize="14dp"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:onClick="hideKeyboard"
+        android:textColor="@color/colorWhite"/>
+
+
+</RelativeLayout>

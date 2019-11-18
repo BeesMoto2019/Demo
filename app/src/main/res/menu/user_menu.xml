@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item  android:id="@+id/userdashboard"
+        android:title="Dashboard"
+        android:icon="@mipmap/mechdashboard">
+    </item>
+
+    <item  android:id="@+id/usercurrent"
+        android:title="Current Orders"
+        android:icon="@mipmap/usernavcurrentorder">
+    </item>
+
+    <item  android:id="@+id/userpast"
+        android:title="Past Orders"
+        android:icon="@mipmap/mechpastorder">
+    </item>
+
+    <item  android:id="@+id/userprofile"
+        android:title="Profile Setting"
+        android:icon="@mipmap/mechprofilesetting">
+    </item>
+
+    <item  android:id="@+id/userpay"
+        android:title="Payment"
+        android:icon="@mipmap/mechprofilesetting">
+    </item>
+
+    <item  android:id="@+id/userlogout"
+        android:title="Logout"
+        android:icon="@mipmap/mechlogout">
+    </item>
+
+
+</menu>

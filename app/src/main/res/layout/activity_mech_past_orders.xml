@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MechPastOrders"
+    android:background="@color/colorWhite">
+
+    <TextView
+        android:id="@+id/textmechpast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:textColor="@color/colorBlack" />
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/past"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolcolor"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        android:minHeight="?attr/actionBarSize"
+        app:titleTextColor="@color/colorWhite"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <ListView
+        android:id="@+id/pastorder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/past"
+        android:layout_marginTop="5dp"/>
+</RelativeLayout>

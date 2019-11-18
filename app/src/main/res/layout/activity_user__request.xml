@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User_Request"
+    android:background="@color/colorWhite"
+    android:onClick="hideSoftKeyboard">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/reqtool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@color/colorWhite"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        android:background="@color/toolcolor"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <ScrollView
+        android:id="@+id/reqscrol"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/reqtool">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+                <EditText
+                    android:id="@+id/userCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textSize="14dp"
+                    android:textCursorDrawable="@drawable/cursorcolor"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorBlack"
+                    android:inputType="text"
+                    android:hint="City" />
+
+                <EditText
+                    android:id="@+id/userlandmark"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textSize="14dp"
+                    android:layout_marginStart="20dp"
+                    android:textCursorDrawable="@drawable/cursorcolor"
+                    android:layout_marginEnd="20dp"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorBlack"
+                    android:inputType="text"
+                    android:layout_below="@id/userCity"
+                    android:layout_marginTop="20dp"
+                    android:hint="Landmark" />
+
+                <EditText
+                    android:id="@+id/userpincode"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/userlandmark"
+                    android:background="@drawable/edittext"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textSize="14dp"
+                    android:layout_marginStart="20dp"
+                    android:textCursorDrawable="@drawable/cursorcolor"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorBlack"
+                    android:inputType="phone"
+                    android:hint="Pincode" />
+
+                <EditText
+                    android:id="@+id/usercontno"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/userpincode"
+                    android:textCursorDrawable="@drawable/cursorcolor"
+                    android:background="@drawable/edittext"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textSize="14dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorBlack"
+                    android:inputType="phone"
+                    android:hint="Contact" />
+
+                <EditText
+                    android:id="@+id/appoinmentdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/edittext"
+                    android:paddingLeft="20dp"
+                    android:textCursorDrawable="@drawable/cursorcolor"
+                    android:paddingRight="20dp"
+                    android:textSize="14dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorBlack"
+                    android:layout_below="@id/usercontno"
+                    android:hint="Appointment Date"
+                    android:inputType="date"/>
+
+                <Spinner
+                    android:id="@+id/spinnertime"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:paddingRight="15dp"
+                    android:paddingLeft="15dp"
+                    android:entries="@array/timing"
+                    android:background="@drawable/edittext"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/appoinmentdate"
+                    android:layout_marginTop="20dp">
+
+                </Spinner>
+
+                <EditText
+                    android:id="@+id/notes"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/edittext"
+                    android:paddingLeft="20dp"
+                    android:textCursorDrawable="@drawable/cursorcolor"
+                    android:paddingRight="20dp"
+                    android:textSize="14dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorBlack"
+                    android:layout_below="@id/spinnertime"
+                    android:hint="Write Something..."
+                    android:inputType="text"/>
+
+
+                <Button
+                    android:id="@+id/userrequest"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/buttonly"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:layout_below="@id/notes"
+                    android:layout_marginTop="30dp"
+                    android:textAllCaps="false"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="14dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Request" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1071858693308",
+    "firebase_url": "https://bikeservice-2795c.firebaseio.com",
+    "project_id": "bikeservice-2795c",
+    "storage_bucket": "bikeservice-2795c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1071858693308:android:399fc6f54f3b070a080cb9",
+        "android_client_info": {
+          "package_name": "com.example.bikeservice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1071858693308-p1e81qgt1v9ksvsrd2ktt18kqgfg0vrg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bikeservice",
+            "certificate_hash": "ed1bfff16a7d46667002be9d116ebf359e43f91b"
+          }
+        },
+        {
+          "client_id": "1071858693308-4mh9vbqirq712ieipfcjlo9gm9cpintt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDNRG3MidEHYI-3VfVa28AOIBLAo5LLM8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1071858693308-4mh9vbqirq712ieipfcjlo9gm9cpintt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
